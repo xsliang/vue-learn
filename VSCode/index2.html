@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第2个Vue.js实例</title>
+    <script src="http://shuzhiqiang.com/vue/Vue.js" ></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{ name }}{{ sex }}</p>
+    </div>
+
+    <script>
+        let obj ={
+            name: "张三",
+            sex: "美女"
+        };
+        let myVM =new Vue({
+            el: '#app',
+            data:obj        
+        });
+        obj.sex = "帅哥！";
+    </script>
+</body>
+</html>
